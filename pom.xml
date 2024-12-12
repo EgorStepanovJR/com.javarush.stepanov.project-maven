@@ -30,6 +30,9 @@
             <groupId>com.javarush</groupId>
             <artifactId>desktop-game-engine</artifactId>
             <version>1.0</version>
+            <scope>system</scope>
+            <classifier>jdk18</classifier>
+            <systemPath>${project.basedir}/lib/desktop-game-engine.jar</systemPath>
         </dependency>
 
         <dependency>
@@ -40,7 +43,6 @@
     </dependencies>
 
     <build>
-
         <resources>
             <resource>
                 <directory>${project.build.directory}/dependency</directory>
@@ -124,8 +126,6 @@
                     </excludes>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
-
 </project>
